@@ -1,0 +1,35 @@
+%body
+  %header
+    %h1 グループを作成しました
+  .left
+    .left__top
+      %a.left__top__title{:href => ""} SEO
+      .left__top__icon-place
+        %a.far.fa-edit{:href => ""}
+        %a.fas.fa-cog{:href => ""}
+    .left__main
+      %a.left__main__group-title{:href => ""} tea
+      %p.left__main__group-text Hello world!
+      %a.left__main__group-title{:href => ""} sample
+      %p.left__main__group-text yahoo world!
+  .right
+    .right__top
+      .right__top__edit-place
+        %a.right__top__edit-place__edit{:href => ""} Edit
+      %h1.right__top__current-group sample
+      %p.right__top__current-text members: seo neko
+    .right__main
+      %div
+        %p.right__main__name seo
+        %p.right__main__date 2019/05/03
+        %p.right__main__comment hello world
+      %div
+        %p.right__main__name seo
+        %p.right__main__date 2019/05/03
+        %p.right__main__comment hello world
+    .right__bottom
+      .right__bottom__text-place
+        %textarea{:name => "name", :style => "width: 640px;height :50px;", :type => "text"}
+          :preserve
+            
+        %a.right__bottom__button{:href => ""} SEND
