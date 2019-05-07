@@ -6,7 +6,7 @@
  * {
   box-sizing: border-box;
   text-decoration:none;
-  
+
 }
 
 
@@ -23,3 +23,5 @@
  @import "./right-top";
  @import "./right-main";
  @import "./right-bottom";
+
+ @import "modules/user";

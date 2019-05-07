@@ -69,3 +69,7 @@ end
 group :development do 
      gem 'rspec'
 end
+
+group :development do
+  gem 'devise'
+end
