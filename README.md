@@ -41,7 +41,7 @@ Things you may want to cover:
 |Column|Type|Options|
 |------|----|-------|
 |name|string|null: false, unique: true|
-|message_id|references|null: false, foreign_key: true|
+
 
 
 ### Association
@@ -57,7 +57,7 @@ Things you may want to cover:
 |------|----|-------|
 |name|string|index: true, null: false, unique:true|
 |mail|string|null: false|
-|message_id|references|null: false, foreign_key: true|
+
 
 
 ### Association
