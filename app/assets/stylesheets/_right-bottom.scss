@@ -9,7 +9,7 @@
   padding-right: 40px;
 
 
-  .right__bottom__button{
+  &__button{
       background-color: $bottunColor;
       padding:10px 15px;
       margin-left: 15px;
@@ -18,7 +18,7 @@
       color: white;
       
   }
-  .right__bottom__text-place{
+  &__text-place{
         margin-top:17px;
         margin-bottom: 17px;
         margin-left: 10px;

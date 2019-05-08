@@ -11,12 +11,12 @@
   padding-right: 40px;
   position: relative;
 
-  .right__top__edit-place{
+  &__edit-place{
     margin-top: 28px; 
     float: right;
     height: 40px;
 
-    .right__top__edit-place__edit{
+    &__edit{
       padding-right: 20px;
       padding-left: 20px;
       padding-top: 12px;
@@ -31,19 +31,19 @@
     }
   }
   
-  .right__top__current-group{
+  &__current-group{
   padding-top: 35px;
   font-size: 20px;
   color: #333333;
   }
 
-  .right__top__current-text{
+  &__current-text{
     margin-top: 15px;
     font-size: 12px;
     color:$maintitleColor;
   }
 
-  .right__top__edit-place__edit{
+  &_edit-place__edit{
     padding-right: 20px;
     padding-left: 20px;
     padding-top: 12px;
