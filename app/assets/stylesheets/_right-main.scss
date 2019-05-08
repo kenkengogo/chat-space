@@ -1,0 +1,31 @@
+.right__main{
+  width: 100%;
+  margin-top: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  background-color: #fafafa;
+  right: 0;
+  height: calc(100% - 228px);
+  position : absolute ;
+  float: right;
+
+
+  .right__main__name{
+    font-size: 16px;
+    color: #434A54;
+    font-weight: bold;
+  }
+
+  .right__main__date{
+    font-size: 12px;
+    color:$maintitleColor;
+  }
+
+  .right__main__comment{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #434A54;
+    margin-bottom: 40px;
+  }
+}

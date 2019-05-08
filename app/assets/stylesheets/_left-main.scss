@@ -1,0 +1,24 @@
+.left__main{
+  padding-left: 20px;
+  padding-right: 20px;
+  position : absolute ;
+  left : 0 ;
+  width : 300px ;
+  height: calc(100% - 128px);
+  background:#2f3e51;
+
+
+  .left__main__group-title{
+    font-size:  15px;
+    @include sidebar-font();
+    padding-top: 20px;
+    display: block;
+  }
+
+  .left__main__group-text{
+    font-size:  11px;
+    @include sidebar-font();
+    padding-top: 5px;
+    padding-bottom: 40px;
+  }
+}
