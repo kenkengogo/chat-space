@@ -1,0 +1,35 @@
+%body
+  %header
+    %h1 グループを作成しました
+  .left
+    .left__top
+      =link_to "SEO",'' ,class: "left__top__title"
+      .left__top__icon-place
+        =link_to '','' ,class: "far fa-edit"
+        =link_to '','' ,class: "fas fa-cog"
+    .left__main
+      =link_to "tea",'' ,class: "left__main__group-title"
+      =link_to "Hello world!",'' ,class: "left__main__group-text"
+      =link_to "sample",'' ,class: "left__main__group-title"
+      =link_to "yahoo world!",'' ,class: "left__main__group-text"
+  .right
+    .right__top
+      .right__top__edit-place
+        =link_to "Edit",'' ,class: "right__top__edit-place__edit"
+      %h1.right__top__current-group sample
+      %p.right__top__current-text members: seo neko
+    .right__main
+      %div
+        %p.right__main__name seo
+        %p.right__main__date 2019/05/03
+        %p.right__main__comment hello world
+      %div
+        %p.right__main__name seo
+        %p.right__main__date 2019/05/03
+        %p.right__main__comment hello world
+    .right__bottom
+      =link_to "SEND",'' ,class: "right__bottom__button"
+      .right__bottom__text-place
+        %textarea{name: "name", placeholder: "type a message", style: "width : 100%; height :50px"}
+          :preserve
+      
