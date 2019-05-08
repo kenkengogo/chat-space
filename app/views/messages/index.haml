@@ -3,19 +3,19 @@
     %h1 グループを作成しました
   .left
     .left__top
-      %a.left__top__title{href: ""} SEO
+      =link_to "SEO",'' ,class: "left__top__title"
       .left__top__icon-place
-        %a.far.fa-edit{href: ""}
-        %a.fas.fa-cog{href: ""}
+        =link_to '','' ,class: "far fa-edit"
+        =link_to '','' ,class: "fas fa-cog"
     .left__main
-      %a.left__main__group-title{href: ""} tea
-      %p.left__main__group-text Hello world!
-      %a.left__main__group-title{href: ""} sample
-      %p.left__main__group-text yahoo world!
+      =link_to "tea",'' ,class: "left__main__group-title"
+      =link_to "Hello world!",'' ,class: "left__main__group-text"
+      =link_to "sample",'' ,class: "left__main__group-title"
+      =link_to "yahoo world!",'' ,class: "left__main__group-text"
   .right
     .right__top
       .right__top__edit-place
-        %a.right__top__edit-place__edit{href: ""} Edit
+        =link_to "Edit",'' ,class: "right__top__edit-place__edit"
       %h1.right__top__current-group sample
       %p.right__top__current-text members: seo neko
     .right__main
@@ -28,7 +28,7 @@
         %p.right__main__date 2019/05/03
         %p.right__main__comment hello world
     .right__bottom
-      %a.right__bottom__button{href: ""} SEND
+      =link_to "SEND",'' ,class: "right__bottom__button"
       .right__bottom__text-place
         %textarea{name: "name", placeholder: "type a message", style: "width : 100%; height :50px"}
           :preserve
