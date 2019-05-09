@@ -1,17 +1,10 @@
 %body
   %header
     %h1 グループを作成しました
-  .left
-    .left__top
-      =link_to "SEO",'' ,class: "left__top__title"
-      .left__top__icon-place
-        =link_to '','' ,class: "far fa-edit"
-        =link_to '','' ,class: "fas fa-cog"
-    .left__main
-      =link_to "tea",'' ,class: "left__main__group-title"
-      =link_to "Hello world!",'' ,class: "left__main__group-text"
-      =link_to "sample",'' ,class: "left__main__group-title"
-      =link_to "yahoo world!",'' ,class: "left__main__group-text"
+
+  = render partial: "messages/side_bar"
+
+  
   .right
     .right__top
       .right__top__edit-place
