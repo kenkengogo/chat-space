@@ -1,29 +1,44 @@
-.right__bottom{
-  background-color: gray;
+
+
+
+.form {
+  position: absolute;
+  display: inline-block;
   bottom:0;
-  width: 100%;
-  height: 80px;
-  position : absolute ;
-  padding-left: 40px;
-  padding-right: 40px;
-
-
-  &__button{
+  right: 0;
+  width: calc(100% - 300px);
+  background-color: #DDDDDD;
+  box-sizing: border-box;
+  height: 90px;
+  padding: 20px 50px 20px 40px;
+  &__message {
+    border: none;
+    float: left;
+    height: 50px;
+    width: calc(100% - 150px);
+  }
+  &__mask {
+    background-color: #fafafa;
+    float: left;
+    height: 50px;
+    padding-right: 10px;
+    &__image {
+      font-size: 20px;
+      line-height: 50px;
+    }
+    .hidden {
+      display: none;
+    }
+  }
+  &__submit {
     background-color: $bottunColor;
-    padding:10px 15px;
-    margin-left: 15px;
-    margin-top: 18px;
+    border: none;
+    color: #fafafa;
     float: right;
-    color: white;
+    font-size: 16px;
+    height: 50px;
+    margin-left: 15px;
+    padding: 0 30px;
   }
-  &__text-place{
-    margin-top:17px;
-    margin-bottom: 17px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    position: relative;
-  }
-  
 }
 
