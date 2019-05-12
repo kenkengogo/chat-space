@@ -2,12 +2,15 @@
   .left__top
     =link_to current_user.name,'' ,class: "left__top__title"
     .left__top__icon-place
-      =link_to '','' ,class: "far fa-edit"
+      = link_to new_group_path(current_user) do
+        = fa_icon 'pencil-square-o', class: 'icon'
       = link_to edit_user_path(current_user) do
         = fa_icon 'cog'
 
   .left__main
-    =link_to "tea",'' ,class: "left__main__group-title"
-    =link_to "Hello world!",'' ,class: "left__main__group-text"
-    =link_to "sample",'' ,class: "left__main__group-title"
-    =link_to "yahoo world!",'' ,class: "left__main__group-text"
+    - current_user.groups.each do |group|
+      = link_to group_messages_path(group) do
+        .left__main__group-title
+          = group.name
+        .left__main__group-text
+          = group.show_last_message
