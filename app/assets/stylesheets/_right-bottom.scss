@@ -2,6 +2,7 @@
 
 
 .form {
+  z-index:2;
   position: absolute;
   display: inline-block;
   bottom:0;
@@ -40,5 +41,14 @@
     margin-left: 15px;
     padding: 0 30px;
   }
+}
+
+#new_message{
+
+}
+
+
+.textbox{
+
 }
 

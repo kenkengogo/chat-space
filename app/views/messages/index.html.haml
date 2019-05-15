@@ -2,15 +2,21 @@
 
   = render partial: "messages/side_bar"
 
-  = render @messages
-
-
-
-
+.right
+  .right__top
+    .right__top__current-group
+      = @group.name
+    .right__top__current-text
+      -# = message.group.users.name
+    -# .right__top___edit-place
+    -#   .right__top___edit-place__edit
+    -#     %h1 EDIT
+  .right__main
+    = render @messages
 
 .form
   = form_for [@group, @message] do |f|
-    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+    = f.text_field :content, class: 'form__message', id: "new_message", placeholder: 'type a message'
     .form__mask
       = f.label :image, class: 'form__mask__image' do
         = fa_icon 'picture-o', class: 'icon'
