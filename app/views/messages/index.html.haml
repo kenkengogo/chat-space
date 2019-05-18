@@ -4,6 +4,9 @@
 
 .right
   .right__top
+    .right__top__edit-place
+      = link_to edit_group_path (current_user) do
+        .right__top__edit-place__edit EDIT
     .right__top__current-group
       = @group.name
     .right__top__current-text
