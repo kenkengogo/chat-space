@@ -22,7 +22,7 @@ class GroupsController < ApplicationController
   end
   
   def edit
-    @users = User.where('name LIKE(?)', "%#{params[:keyword]}%").where.not(id: current_user.id)
+    @users = User.where.not(id: current_user.id)
     respond_to do |format|
       format.html
       format.json
