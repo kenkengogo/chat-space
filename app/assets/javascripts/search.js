@@ -9,7 +9,6 @@ $(function() {
     return html;
   }
 
-
   $("#user-search-field").on("keyup", function() {
     var input = $("#user-search-field").val();
     if (input == ''){ $("#user-search-result").empty();}
@@ -37,7 +36,6 @@ $(function() {
   }
   })
 
-  
   function clickHTML(user){
     var userId = user.attr("data-user-id");
     var html = `<div class='chat-group-user clearfix js-chat-member' id='${userId}'>
@@ -56,10 +54,7 @@ $(function() {
   })
 
   $(document).on("click",".user-search-remove", function() {
-
     $input = $(this);
     $input.parent().remove();
-
   })
-
 })
