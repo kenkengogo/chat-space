@@ -1,12 +1,12 @@
 
-.right__main__message
+.right__main__message{data:{id: message.id}}
   .right__main__message__name
     = message.user.name
   .right__main__message__date
     = message.created_at.strftime("%Y/%m/%d %H:%M")
-.lower-message__image
-  - if message.content.present?
-    .right__main__message__comment
-      = message.content
-  = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
+  .lower-message__image
+    - if message.content.present?
+      .right__main__message__comment
+        = message.content
+    = image_tag message.image.url, class: 'lower-message__image' if message.image.present?
 
