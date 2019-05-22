@@ -2,7 +2,7 @@
 
   = render partial: "messages/side_bar"
 
-.right
+.right{data:{id: @group.id}}
   .right__top
     .right__top__edit-place
       = link_to edit_group_path (current_user) do
