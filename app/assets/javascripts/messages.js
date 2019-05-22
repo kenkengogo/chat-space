@@ -17,9 +17,9 @@ $(function(){
       return html;
     }
 
-    // function ScrollToNewMessage(){
-    //   $('.main__message').animate({scrollTop: $('.main__message')[0].scrollHeight}, 'fast');
-    // }
+    function ScrollToNewMessage(){
+      $('.right__main__message').animate({scrollTop: $('.right__main__message')[0].scrollHeight}, 'fast');
+    }
 
     $('#new_message').on('submit', function(e){
 
@@ -50,8 +50,7 @@ $(function(){
     var reloadMessages = function() {
       //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
       var last_message_id = $('.right__main__message').last().data('id');
-      var group_id = $('.right').data('group_id');
-      // var url = `/groups/${group_id}/api/messages`;
+      var group_id = $('.right').data('id');
       if (window.location.href.match(/\/groups\/\d+\/messages/)){
       $.ajax({
         //ルーティングで設定した通りのURLを指定
@@ -63,12 +62,11 @@ $(function(){
       })
         //dataオプションでリクエストに値を含める
         .done(function(data){
-          console.log(data)
           var insertHTML = '';
           data.forEach(function(data){
           insertHTML = buildHTML(data);
           $('.right__main').append(insertHTML)
-          // ScrollToNewMessage();
+          ScrollToNewMessage();
           });
         })
         .fail(function(data){
@@ -76,6 +74,5 @@ $(function(){
         })
       }
     }
-
         setInterval(reloadMessages, 5000);
       })
