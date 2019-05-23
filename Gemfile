@@ -43,6 +43,7 @@ group :development, :test do
   gem 'rails-controller-testing'
   gem 'factory_bot_rails'
   gem 'faker'
+  gem 'rspec'
 end
 
 group :development do
@@ -66,15 +67,6 @@ gem 'haml-rails'
 group :production do
   gem 'unicorn', '5.4.1'
 end
-
-group :test do 
-     gem 'rspec'
-end
-
-group :development do 
-     gem 'rspec'
-end
-
 
 gem 'carrierwave'
 gem 'mini_magick'
